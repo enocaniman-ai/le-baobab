@@ -2,6 +2,8 @@
 
 Site de 4 pages pour **Le Baobab**, restaurant ivoirien à Cocody (Abidjan) : menu en 3D, réservation en ligne et assistant qui répond tout seul aux questions des clients.
 
+**Site en ligne : https://enocaniman-ai.github.io/le-baobab/**
+
 HTML, CSS et JavaScript sans framework. La 3D utilise [Three.js](https://threejs.org) (chargé depuis un CDN, aucune installation).
 
 ![Accueil](docs/captures/accueil-ordinateur.jpg)
@@ -179,6 +181,6 @@ GitHub Pages : pousser le dossier sur un dépôt, puis Settings > Pages > Branch
 - [x] Modifier un plat dans le JSON met à jour la page Menu (et l'accueil, et le chatbot)
 - [ ] Une réservation de test arrive par e-mail : à vérifier après avoir renseigné `formspreeId`
 - [x] Le chatbot répond juste à au moins 10 questions types (18 sujets)
-- [ ] Accessible via un lien public : après mise en ligne
+- [x] Accessible via un lien public : https://enocaniman-ai.github.io/le-baobab/
 
 Audit qualité détaillé : [AUDIT.md](AUDIT.md).
