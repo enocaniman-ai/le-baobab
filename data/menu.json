@@ -1,0 +1,219 @@
+{
+  "devise": "FCFA",
+  "categories": [
+    {
+      "id": "entrees",
+      "nom": "Entrées"
+    },
+    {
+      "id": "plats",
+      "nom": "Plats"
+    },
+    {
+      "id": "boissons",
+      "nom": "Boissons"
+    }
+  ],
+  "articles": [
+    {
+      "id": "alloco-oeufs",
+      "nom": "Alloco œufs",
+      "categorie": "entrees",
+      "prix": 2000,
+      "description": "Banane plantain bien mûre frite à point, deux œufs durs et notre sauce piment maison.",
+      "image": "assets/img/alloco-oeufs.webp",
+      "splat": "assets/splat/alloco-oeufs",
+      "modele": "alloco",
+      "tags": [
+        "Végétarien"
+      ]
+    },
+    {
+      "id": "choukouya",
+      "nom": "Choukouya de bœuf",
+      "categorie": "entrees",
+      "prix": 3000,
+      "description": "Brochettes de bœuf grillées au feu de bois, marinées au piment kankankan et aux épices.",
+      "image": "assets/img/choukouya.webp",
+      "splat": "assets/splat/choukouya",
+      "modele": "choukouya",
+      "tags": [
+        "Épicé"
+      ]
+    },
+    {
+      "id": "gbofloto",
+      "nom": "Gbofloto",
+      "categorie": "entrees",
+      "prix": 1000,
+      "description": "Beignets de farine dorés, croustillants dehors et moelleux dedans. Servis chauds, à la pièce ou en assiette.",
+      "image": "assets/img/gbofloto.webp",
+      "splat": "assets/splat/gbofloto",
+      "modele": "gbofloto",
+      "tags": [
+        "Végétarien"
+      ]
+    },
+    {
+      "id": "garba",
+      "nom": "Garba",
+      "categorie": "plats",
+      "prix": 1500,
+      "description": "Attiéké, thon frit, piment frais, tomate et oignon. Le classique de la rue, version Baobab.",
+      "image": "assets/img/garba.webp",
+      "splat": "assets/splat/garba",
+      "modele": "garba",
+      "phare": true,
+      "tags": [
+        "Épicé",
+        "Best-seller"
+      ]
+    },
+    {
+      "id": "attieke-poisson-braise",
+      "nom": "Attiéké poisson braisé",
+      "categorie": "plats",
+      "prix": 4500,
+      "description": "Carpe braisée entière, attiéké, oignons rouges, crudités et sauce tomate pimentée.",
+      "image": "assets/img/attieke-poisson-braise.webp",
+      "splat": "assets/splat/attieke-poisson-braise",
+      "modele": "attieke-poisson",
+      "phare": true,
+      "tags": [
+        "Épicé"
+      ]
+    },
+    {
+      "id": "riz-gras-poisson",
+      "nom": "Riz gras au poisson",
+      "categorie": "plats",
+      "prix": 4000,
+      "description": "Riz cuit dans la sauce tomate, poisson farci au persil, carottes, chou et aubergines.",
+      "image": "assets/img/riz-gras-poisson.webp",
+      "splat": "assets/splat/riz-gras-poisson",
+      "modele": "riz-gras",
+      "phare": true,
+      "tags": []
+    },
+    {
+      "id": "foutou-banane-sauce-graine",
+      "nom": "Foutou banane sauce graine",
+      "categorie": "plats",
+      "prix": 5000,
+      "description": "Foutou de banane pilé à la main, sauce graine de palme, viande de bœuf et poisson fumé.",
+      "image": "assets/img/foutou-banane-sauce-graine.webp",
+      "splat": "assets/splat/foutou-banane-sauce-graine",
+      "modele": "foutou-graine",
+      "tags": []
+    },
+    {
+      "id": "foutou-igname-gombo",
+      "nom": "Foutou igname sauce gombo",
+      "categorie": "plats",
+      "prix": 7500,
+      "description": "Foutou d'igname, sauce gombo aux crevettes, crabe et viande fumée. Servi dans le canari.",
+      "image": "assets/img/foutou-igname-gombo.webp",
+      "splat": "assets/splat/foutou-igname-gombo",
+      "modele": "foutou-gombo",
+      "tags": [
+        "Fruits de mer"
+      ]
+    },
+    {
+      "id": "eau-minerale",
+      "nom": "Eau minérale",
+      "categorie": "boissons",
+      "prix": 500,
+      "description": "Bouteille de 50 cl, bien fraîche.",
+      "image": "assets/img/eau-minerale.webp",
+      "splat": "assets/splat/eau-minerale",
+      "modele": "eau",
+      "tags": []
+    },
+    {
+      "id": "coca-cola",
+      "nom": "Coca-Cola 2 L",
+      "categorie": "boissons",
+      "prix": 2000,
+      "description": "La grande bouteille, à partager à table.",
+      "image": "assets/img/coca-cola.webp",
+      "splat": "assets/splat/coca-cola",
+      "modele": "coca",
+      "tags": []
+    },
+    {
+      "id": "red-bull",
+      "nom": "Red Bull",
+      "categorie": "boissons",
+      "prix": 1500,
+      "description": "Canette de 25 cl.",
+      "image": "assets/img/red-bull.webp",
+      "splat": "assets/splat/red-bull",
+      "modele": "redbull",
+      "tags": []
+    },
+    {
+      "id": "monster",
+      "nom": "Monster Energy",
+      "categorie": "boissons",
+      "prix": 2000,
+      "description": "Canette de 50 cl.",
+      "image": "assets/img/monster.webp",
+      "splat": "assets/splat/monster",
+      "modele": "monster",
+      "tags": []
+    },
+    {
+      "id": "desperados",
+      "nom": "Desperados",
+      "categorie": "boissons",
+      "prix": 2000,
+      "description": "Bière aromatisée tequila, 33 cl. Réservée aux plus de 18 ans.",
+      "image": "assets/img/desperados.webp",
+      "splat": "assets/splat/desperados",
+      "modele": "desperados",
+      "tags": [
+        "Alcool"
+      ]
+    },
+    {
+      "id": "vody",
+      "nom": "Vody",
+      "categorie": "boissons",
+      "prix": 1500,
+      "description": "Vodka energy mix, canette de 25 cl. Réservée aux plus de 18 ans.",
+      "image": "assets/img/vody.webp",
+      "splat": "assets/splat/vody",
+      "modele": "vody",
+      "tags": [
+        "Alcool"
+      ]
+    },
+    {
+      "id": "jus-bissap",
+      "nom": "Jus de bissap",
+      "categorie": "boissons",
+      "prix": 1000,
+      "description": "Fleurs d'hibiscus infusées, menthe et gingembre. Fait maison chaque matin.",
+      "image": "assets/img/jus-bissap.webp",
+      "splat": "assets/splat/jus-bissap",
+      "modele": "bissap",
+      "tags": [
+        "Fait maison"
+      ]
+    },
+    {
+      "id": "jus-orange",
+      "nom": "Jus d'orange pressé",
+      "categorie": "boissons",
+      "prix": 1000,
+      "description": "Oranges de Bonoua pressées le jour même, sans sucre ajouté.",
+      "image": "assets/img/jus-orange.webp",
+      "splat": "assets/splat/jus-orange",
+      "modele": "orange",
+      "tags": [
+        "Fait maison"
+      ]
+    }
+  ]
+}

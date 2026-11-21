@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact et réservation | Le Baobab, Cocody</title>
+<meta name="description" content="Réservez votre table au Baobab, consultez nos horaires, notre adresse à Cocody Deux-Plateaux et écrivez-nous sur WhatsApp.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact et réservation | Le Baobab, Cocody">
+<meta property="og:description" content="Réservez votre table au Baobab, consultez nos horaires, notre adresse à Cocody Deux-Plateaux et écrivez-nous sur WhatsApp.">
+<meta property="og:image" content="assets/img/garba.webp">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css?v=5">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-baobab" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="57" fill="none" stroke="#F77F00" stroke-width="4"/>
+<g stroke="#F77F00" stroke-linecap="round" fill="none" stroke-width="5"><path d="M52 50C46 40 36 36 24 36"/><path d="M55 48C52 37 46 29 40 22"/><path d="M60 48V20"/><path d="M65 48C68 37 74 29 80 22"/><path d="M68 50C74 40 84 36 96 36"/></g>
+<g fill="#F77F00"><ellipse cx="23" cy="33" rx="11" ry="6"/><ellipse cx="39" cy="20" rx="10" ry="6"/><ellipse cx="60" cy="16" rx="11" ry="6"/><ellipse cx="81" cy="20" rx="10" ry="6"/><ellipse cx="97" cy="33" rx="11" ry="6"/>
+<path d="M36 100C38 86 36 74 44 62C48 56 50 52 50 46H70C70 52 72 56 76 62C84 74 82 86 84 100Z"/><rect x="22" y="99" width="76" height="4" rx="2"/></g></symbol></svg>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="progression" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#logo-baobab"/></svg>
+      <span class="brand-name">Baobab<small>Maquis ivoirien à Cocody</small></span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a><a href="menu.html">Menu</a><a href="a-propos.html">À propos</a><a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-plein" href="contact.html#reservation">Réserver</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+  <header class="page-head wrap">
+    <h1>Contact</h1>
+    <p>Réservez en une minute, nous vous rappelons pour confirmer.</p>
+  </header>
+
+  <div class="wrap">
+    <div class="contact-grid">
+      <section class="carte-form" id="reservation" aria-labelledby="resa-titre">
+        <h2 id="resa-titre">Réserver une table</h2>
+        <p>Les champs marqués d'une étoile sont obligatoires.</p>
+        <form id="form-resa" novalidate>
+          <div class="champs">
+            <div class="champ">
+              <label for="nom">Nom *</label>
+              <input id="nom" name="nom" autocomplete="name" required aria-describedby="err-nom">
+              <span class="erreur" id="err-nom"></span>
+            </div>
+            <div class="champ">
+              <label for="telephone">Téléphone *</label>
+              <input id="telephone" name="telephone" type="tel" inputmode="tel" autocomplete="tel" placeholder="07 12 34 56 78" required aria-describedby="err-telephone">
+              <span class="erreur" id="err-telephone"></span>
+            </div>
+            <div class="champ">
+              <label for="date">Date *</label>
+              <input id="date" name="date" type="date" required aria-describedby="err-date">
+              <span class="erreur" id="err-date"></span>
+            </div>
+            <div class="champ">
+              <label for="heure">Heure *</label>
+              <select id="heure" name="heure" required aria-describedby="err-heure"><option value="">Choisir une heure</option></select>
+              <span class="erreur" id="err-heure"></span>
+            </div>
+            <div class="champ">
+              <label for="personnes">Nombre de personnes *</label>
+              <input id="personnes" name="personnes" type="number" min="1" max="20" inputmode="numeric" value="2" required aria-describedby="err-personnes">
+              <span class="erreur" id="err-personnes"></span>
+            </div>
+            <div class="champ">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion"><option>Repas</option><option>Anniversaire</option><option>Repas d'affaires</option><option>En amoureux</option></select>
+            </div>
+            <div class="champ full">
+              <label for="message">Précisions</label>
+              <textarea id="message" name="message" maxlength="500" placeholder="Terrasse, chaise haute, allergie…"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-plein" type="submit">Envoyer la réservation</button>
+            <a class="btn btn-wa" data-wa="Bonjour Le Baobab, je voudrais réserver une table." href="https://wa.me/2250700000000" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+          </div>
+          <div class="form-statut" id="form-statut" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <aside class="infos" aria-label="Informations pratiques">
+        <section class="bloc" id="horaires" aria-labelledby="h-titre">
+          <h2 id="h-titre">Horaires</h2>
+          <table class="horaires"><caption class="sr-only">Horaires d'ouverture</caption><tbody id="horaires-body"></tbody></table>
+        </section>
+        <section class="bloc" aria-labelledby="a-titre">
+          <h2 id="a-titre">Adresse</h2>
+          <p>Rue des Jardins, Cocody Deux-Plateaux<br>Abidjan, Côte d'Ivoire<br>Parking gardé gratuit devant le restaurant.</p>
+        </section>
+        <section class="bloc" aria-labelledby="c-titre">
+          <h2 id="c-titre">Nous joindre</h2>
+          <p><a href="tel:+2250700000000">+225 07 00 00 00 00</a><br><a href="mailto:reservation@lebaobab.ci">reservation@lebaobab.ci</a></p>
+          <a class="btn btn-wa" data-wa="Bonjour Le Baobab !" href="https://wa.me/2250700000000" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        </section>
+        <section class="bloc" aria-labelledby="p-titre">
+          <h2 id="p-titre">Paiement</h2>
+          <p>Espèces, carte bancaire, Wave, Orange Money, MTN MoMo et Moov Money.</p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="carte-map" id="plan">
+      <iframe title="Plan d'accès au restaurant Le Baobab, Cocody Deux-Plateaux" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Cocody%20Deux-Plateaux%2C%20Abidjan&amp;z=15&amp;output=embed"></iframe>
+    </div>
+  </div>
+  <div style="height:clamp(4rem,8vw,6rem)"></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#logo-baobab"/></svg><span class="brand-name">Baobab</span></a>
+        <p style="margin-top:1rem;max-width:32ch;color:var(--sable)">Le vrai goût d'Abidjan, servi à l'ombre du Baobab depuis 2014.</p>
+      </div>
+      <div>
+        <h2>Le site</h2>
+        <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact et réservation</a></li></ul>
+      </div>
+      <div>
+        <h2>Nous trouver</h2>
+        <ul><li>Rue des Jardins</li><li>Cocody Deux-Plateaux, Abidjan</li><li><a href="tel:+2250700000000">+225 07 00 00 00 00</a></li><li><a href="contact.html#horaires">Horaires d'ouverture</a></li></ul>
+      </div>
+      <div>
+        <h2>Suivez-nous</h2>
+        <ul><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a data-wa="Bonjour Le Baobab !" href="https://wa.me/2250700000000" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      </div>
+    </div>
+    <svg class="footer-big" viewBox="0 0 1000 230" aria-hidden="true" focusable="false"><text x="0" y="215" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="290">BAOBAB</text></svg>
+    <p class="footer-legal">© <span data-year>2026</span> Le Baobab, Abidjan. Prix en FCFA, service compris.</p>
+  </div>
+</footer>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/motion.js"></script>
+<script type="module" src="js/contact.js"></script>
+</body>
+</html>

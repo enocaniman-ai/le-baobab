@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Génération de l'affiche 3D</title>
+<style>html, body { margin: 0; background: transparent; } canvas { display: block; }</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+<!-- Rend le garba dans la pose du héros (bureau, 1366x800) sur fond transparent.
+     Capture : chrome --headless=new --screenshot --default-background-color=00000000 -->
+<script type="module">
+import { THREE, buildModel, makeEnvironment, addLights, normalize } from '../js/models.js';
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.setClearColor(0x000000, 0);
+document.body.append(renderer.domElement);
+const scene = new THREE.Scene();
+scene.environment = await makeEnvironment(renderer);
+addLights(scene);
+const camera = new THREE.PerspectiveCamera(32, 1366 / 800, 0.1, 100);
+camera.setViewOffset(1366, 800, 0, 0, 1366, 1600);
+camera.position.set(0, 0, 11);
+const outer = new THREE.Group(), spin = new THREE.Group(), holder = new THREE.Group();
+holder.add(normalize(buildModel('garba'))); spin.add(holder); outer.add(spin); scene.add(outer);
+outer.position.set(0, -2.35, 0); outer.scale.setScalar(1.3); outer.rotation.set(0.78, 0, 0);
+renderer.render(scene, camera);
+document.title = 'ok';
+</script>
+</body>
+</html>

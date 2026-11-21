@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Baobab | Restaurant ivoirien à Cocody, Abidjan</title>
+<meta name="description" content="Garba, alloco, foutou et poisson braisé à Cocody. Découvrez le menu en 3D et réservez votre table au Baobab.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Le Baobab | Restaurant ivoirien à Cocody, Abidjan">
+<meta property="og:description" content="Garba, alloco, foutou et poisson braisé à Cocody. Découvrez le menu en 3D et réservez votre table au Baobab.">
+<meta property="og:image" content="assets/img/garba.webp">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css?v=5">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-baobab" viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="57" fill="none" stroke="#F77F00" stroke-width="4"/>
+<g stroke="#F77F00" stroke-linecap="round" fill="none" stroke-width="5"><path d="M52 50C46 40 36 36 24 36"/><path d="M55 48C52 37 46 29 40 22"/><path d="M60 48V20"/><path d="M65 48C68 37 74 29 80 22"/><path d="M68 50C74 40 84 36 96 36"/></g>
+<g fill="#F77F00"><ellipse cx="23" cy="33" rx="11" ry="6"/><ellipse cx="39" cy="20" rx="10" ry="6"/><ellipse cx="60" cy="16" rx="11" ry="6"/><ellipse cx="81" cy="20" rx="10" ry="6"/><ellipse cx="97" cy="33" rx="11" ry="6"/>
+<path d="M36 100C38 86 36 74 44 62C48 56 50 52 50 46H70C70 52 72 56 76 62C84 74 82 86 84 100Z"/><rect x="22" y="99" width="76" height="4" rx="2"/></g></symbol></svg>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="progression" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#logo-baobab"/></svg>
+      <span class="brand-name">Baobab<small>Maquis ivoirien à Cocody</small></span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a><a href="menu.html">Menu</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a>
+      <a class="btn btn-plein" href="contact.html#reservation">Réserver</a>
+    </nav>
+  </div>
+</header>
+<canvas class="stage3d" role="img" aria-label="Plat du Baobab en 3D, il pivote avec la souris et le défilement"></canvas>
+<main id="contenu">
+  <section class="hero" aria-labelledby="hero-titre">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/img/sm/attieke-poisson-braise.webp" alt="" width="736" height="635" fetchpriority="low">
+      <img src="assets/img/sm/riz-gras-poisson.webp" alt="" width="676" height="1200" fetchpriority="low">
+      <img src="assets/img/sm/foutou-igname-gombo.webp" alt="" width="735" height="828" fetchpriority="low">
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <svg class="hero-mark" viewBox="0 0 120 120" aria-hidden="true"><use href="#logo-baobab"/></svg>
+    <div class="hero-scene"><img class="hero-poster" src="assets/img/garba-3d.webp" srcset="assets/img/garba-3d-sm.webp 237w, assets/img/garba-3d.webp 436w" sizes="(max-width: 859px) 17svh, 39vh" alt="Garba du Baobab : attiéké, thon frit, piment, tomate et oignon" width="436" height="700" fetchpriority="high"></div>
+    <h1 id="hero-titre" class="hero-title"><span>On mange bien</span><span class="l2">au Baobab</span></h1>
+    <div class="hero-foot wrap">
+      <p class="hero-slogan">Le vrai goût d'Abidjan, servi à l'ombre du Baobab. Garba, alloco, foutou et poisson braisé, à Cocody.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-plein" href="contact.html#reservation">Réserver une table</a>
+        <a class="btn btn-ligne" href="menu.html">Voir le menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="phares" aria-labelledby="phares-titre">
+    <div class="phares-bg" aria-hidden="true"><img class="is-on" alt="" src="assets/img/garba.webp" srcset="assets/img/sm/garba.webp 420w, assets/img/garba.webp 900w" sizes="100vw" fetchpriority="low" decoding="async"><img alt=""></div>
+    <div class="phares-pin">
+      <div class="wrap">
+        <h2 id="phares-titre" class="sr-only">Nos plats phares</h2>
+        <div class="phare-scene" aria-hidden="true"></div>
+        <p class="phare-nom" id="phare-nom" aria-live="polite">Garba</p>
+        <dl class="phare-details">
+          <div><dt>Dans l'assiette</dt><dd id="phare-desc">Attiéké, thon frit, piment frais, tomate et oignon.</dd></div>
+          <div><dt>Piment</dt><dd id="phare-piment">Bien relevé</dd></div>
+          <div><dt>Où le goûter</dt><dd>Sur place, à emporter ou livré à Cocody</dd></div>
+        </dl>
+        <p class="phare-prix" id="phare-prix">1 500 FCFA</p>
+        <a class="btn btn-noir" href="menu.html">Toute la carte</a>
+      </div>
+      <div class="phare-thumbs" role="group" aria-label="Choisir un plat phare"></div>
+      <p class="phare-compteur" aria-hidden="true"><b id="phare-num">1</b> / <span id="phare-total">3</span></p>
+    </div>
+  </section>
+
+  <div class="bandeau" aria-hidden="true">
+    <div class="bandeau-ligne">
+      <span>Garba</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg><span>Alloco</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg>
+      <span>Attiéké</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg><span>Foutou</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg>
+      <span>Choukouya</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg><span>Bissap</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg>
+      <span>Gbofloto</span><svg viewBox="0 0 120 120"><use href="#logo-baobab"/></svg><span>Riz gras</span>
+    </div>
+  </div>
+
+  <section class="section avis" aria-labelledby="avis-titre">
+    <div class="wrap">
+      <h2 id="avis-titre" class="section-title">Ils ont goûté</h2>
+      <div class="avis-grid">
+        <blockquote><p>« Le garba le plus propre de Cocody. Le thon est croustillant, l'attiéké bien chaud. Je viens chaque vendredi. »</p><cite>Koffi A., Riviera 3</cite></blockquote>
+        <blockquote><p>« On a fêté l'anniversaire de ma mère sur la terrasse. Foutou sauce graine comme au village, service au top. »</p><cite>Mariam D., Deux-Plateaux</cite></blockquote>
+        <blockquote><p>« Commandé sur WhatsApp, livré en 40 minutes, encore chaud. Le bissap maison vaut le détour à lui seul. »</p><cite>Jean-Marc K., Plateau</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" aria-labelledby="faq-titre">
+    <div class="wrap">
+      <h2 id="faq-titre" class="section-title">Vos questions</h2>
+      <div class="faq-list">
+        <details><summary>Quels sont vos horaires ?</summary><p>Du lundi au jeudi de 11h à 23h, le vendredi et le samedi de 11h à 1h du matin, le dimanche de 12h à 22h.</p></details>
+        <details><summary>Faut-il réserver ?</summary><p>Conseillé le vendredi soir et le week-end. Réservez en ligne en une minute, nous confirmons par téléphone.</p></details>
+        <details><summary>Livrez-vous à domicile ?</summary><p>Oui, à Cocody, Riviera, Deux-Plateaux et Plateau. Frais de livraison : 1 000 FCFA, environ 45 minutes. Commande sur WhatsApp.</p></details>
+        <details><summary>Comment payer ?</summary><p>Espèces, carte bancaire, Wave, Orange Money, MTN MoMo et Moov Money.</p></details>
+        <details><summary>Accueillez-vous les groupes ?</summary><p>Jusqu'à 60 personnes, terrasse privatisable pour vos anniversaires et repas d'entreprise.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band" aria-labelledby="cta-titre">
+    <div class="wrap">
+      <h2 id="cta-titre">Une table vous attend ce soir</h2>
+      <a class="btn btn-noir" href="contact.html#reservation">Réserver une table</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#logo-baobab"/></svg><span class="brand-name">Baobab</span></a>
+        <p style="margin-top:1rem;max-width:32ch;color:var(--sable)">Le vrai goût d'Abidjan, servi à l'ombre du Baobab depuis 2014.</p>
+      </div>
+      <div>
+        <h2>Le site</h2>
+        <ul><li><a href="index.html">Accueil</a></li><li><a href="menu.html">Menu</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact et réservation</a></li></ul>
+      </div>
+      <div>
+        <h2>Nous trouver</h2>
+        <ul><li>Rue des Jardins</li><li>Cocody Deux-Plateaux, Abidjan</li><li><a href="tel:+2250700000000">+225 07 00 00 00 00</a></li><li><a href="contact.html#horaires">Horaires d'ouverture</a></li></ul>
+      </div>
+      <div>
+        <h2>Suivez-nous</h2>
+        <ul><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a data-wa="Bonjour Le Baobab !" href="https://wa.me/2250700000000" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      </div>
+    </div>
+    <svg class="footer-big" viewBox="0 0 1000 230" aria-hidden="true" focusable="false"><text x="0" y="215" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="290">BAOBAB</text></svg>
+    <p class="footer-legal">© <span data-year>2026</span> Le Baobab, Abidjan. Prix en FCFA, service compris.</p>
+  </div>
+</footer>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/motion.js"></script>
+<script type="module" src="js/home.js"></script>
+</body>
+</html>
