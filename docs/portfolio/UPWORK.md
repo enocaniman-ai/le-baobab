@@ -7,6 +7,14 @@ Code : https://github.com/enocaniman-ai/le-baobab
 
 ---
 
+## Description courte (champ Upwork limité à 600 caractères)
+
+EN (460 caractères) : Concept project: a 4-page website for an Ivorian restaurant in Abidjan. I turned the restaurant's own photos into interactive 3D: AI cutout (BiRefNet) and depth (Depth Anything V2), rendered with Three.js. 16 dishes and drinks driven by an editable JSON menu, GSAP scroll storytelling, a keyword chatbot that pre-fills bookings, WhatsApp and Formspree reservations. Mobile-first and accessible. Lighthouse mobile: 98–99 performance, 100 accessibility, 100 SEO.
+
+FR (474 caractères) : Projet conceptuel : site de 4 pages pour un restaurant ivoirien à Abidjan. J'ai transformé les photos du restaurant en 3D interactive : détourage (BiRefNet) et profondeur (Depth Anything V2) par IA, rendu avec Three.js. 16 plats et boissons pilotés par un menu JSON modifiable, défilement animé avec GSAP, chatbot qui pré-remplit les réservations, WhatsApp et Formspree. Mobile d'abord et accessible. Lighthouse mobile : 98–99 en performance, 100 en accessibilité et en SEO.
+
+---
+
 ## Version anglaise (recommandée sur Upwork)
 
 **Project title** (max. 70 caractères)
